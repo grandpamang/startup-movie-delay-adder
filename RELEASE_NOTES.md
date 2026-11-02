@@ -18,8 +18,8 @@ Changes from the earlier ZIP:
 
 ## Validation
 
-Local Windows development check: Python 3.12.10 and FFmpeg 9.0.2, synthetic Steam folders and generated media. Initial run: 39 tests, 34 passed and five Linux/symlink tests skipped. Bash syntax checked with Git Bash 5.3.9. Windows runs the embedded converter directly and is not a supported deployment target.
+Local Windows development check: Python 3.12.10 and FFmpeg 9.0.2, synthetic Steam folders and generated media. Final run: 44 tests, 36 passed and eight Linux/symlink tests skipped. Bash syntax checked with Git Bash 5.3.9; ShellCheck 0.11.0 passed. Windows runs the embedded converter directly and is not a supported deployment target.
 
-Linux CI results will be recorded before this release is published.
+Linux GitHub Actions: **44/44 passed on both Ubuntu 22.04 and Ubuntu 24.04, with no skips**, using the shipped Bash launcher. This includes symlink collisions, concurrent saves, interruption cleanup, and unwritable output folders. Shell syntax and ShellCheck also passed. [Validation run](https://github.com/grandpamang/startup-movie-delay-adder/actions/runs/41504441425).
 
 Not tested on Joe's real Steam Machine, Steam Deck, SteamOS Gaming Mode, or TV HDMI boot/wake path. There is no claim that the delay resolves a specific display's clipping, that every Steam build accepts the output, or that Flatpak Steam playback has been verified.
